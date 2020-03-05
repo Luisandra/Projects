@@ -1,3 +1,30 @@
+#forPositioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Height needed to allow for vertical centering  */
+    /* also allows for responsiveness  */
+    height: 100vh;
+    width: 100vw;
+    background-color: darkorange;
+}
+
+/* Done in CodeAlong. I used flexbox instead  */
+/* #listContainer {
+    width: 360px;
+    margin: 0 auto;
+} */
+
+#listContainer {
+    border: 2px solid darkslategrey;
+    padding: 10px 30px;
+}
+
 body {
-    background-color: crimson;
+    background-color: darkred;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgba(173, 179, 179, 0.726);
 }

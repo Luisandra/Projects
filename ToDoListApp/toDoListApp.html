@@ -10,14 +10,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
+        <!-- Load CSS before jQuery  -->
         <link rel="stylesheet" href="Assets/CSS/toDoStyle.css">
+        <!-- Connected jQuery Link  -->
+        <script type="text/javascript" src="Assets/JS/Lib/jquery-3.4.1.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div id="forPositioning">
+            <div id="listContainer">
+                <h2>To-Do List</h2>
+                <input type="text">
+                <ul>
+                    <li><span class="delete">X</span> Test1</li>
+                    <li><span class="delete">X</span> Test2</li>
+                    <li><span class="delete">X</span> Test3</li>
+                </ul>
+            </div>
+        </div>
         
         <script src="Assets/JS/toDoScript.js"></script>
     </body>
