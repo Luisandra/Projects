@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Lato&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="vacaStyle.css">
+    </head>
+    <body>
+        <div class="pgContent">
+            <div class="banner">
+                <div class="heading">
+                    <h1>Vacation Packages</h1>
+                    <p id="coName">jQuery Travels</p>
+                </div>
+                <div class="filter">
+                    <button class="sale-filter">On Sale Now</button>
+                    <button class="expiring-filter">Expiring Soon</button>
+                </div>
+            </div>
+            <div class="packages">
+                    <!-- DATA ATTRIBUTE MUST BE IN LOWER CASE  -->
+                <div class="vaca expiring" data-sales_price="499.99">
+                    <h2>Hawaii Vacation</h2>
+                    <div class="priceBtn">
+                        <button class="getPrice">Get Price</button>
+                    </div>                    
+                    <p class="commentTitle">Comments on this deal:</p>
+                    <ul class="comments">
+                        <li>Amazing deal!</li>
+                        <li>Accommodations were great. Thanks!</li>
+                    </ul>
+                </div>
+                <div class="vaca" data-sales_price="99.99">
+                    <h2>Las Vegas</h2>
+                    <div class="priceBtn">
+                        <button class="getPrice">Get Price</button>
+                    </div>
+                    <p class="commentTitle">Comments on this deal:</p>
+                    <ul class="comments">
+                        <li>yeah baby!</li>
+                        <li>What happens in Vegas, stays in Vegas</li>
+                    </ul>
+                </div>
+                <div class="vaca onsale" data-sales_price="1199.99">
+                    <h2>Round Trip to Japan</h2>
+                    <div class="priceBtn">
+                        <button class="getPrice">Get Price</button>
+                    </div>
+                    <p class="commentTitle">Comments on this deal:</p>
+                    <ul class="comments">
+                        <li>Great price!</li>
+                        <!-- // MUST USE &lt; FOR < SYMBOL  -->
+                        <li>&lt;3 </li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- <div class="packages">
+                <div class="info">
+                    <ul>
+                        <h3 class="vaca" data-salesPrice="499.99">Hawaii Vacation</h3>
+                        <button class="getPrice">Get Price</button>
+                        <p class="commentTitle">Comments on this deal:</p>
+                        <ul class="comments">
+                            <li>Amazing deal!</li>
+                            <li>Accommodations were great. Thanks!</li>
+                        </ul>
+                    </ul>
+                </div>
+    
+                <div class="info">
+                    <ul>
+                        <li>
+                            <h3 class="vaca" data-salesPrice="99.99">Las Vegas</h3>
+                            <button class="getPrice">Get Price</button>
+                            <p class="commentTitle">Comments on this deal:</p>
+                            <ul class="comments">
+                                <li>yeah baby!</li>
+                                <li>What happens in Vegas, stays in Vegas</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="info">
+                    <ul>
+                    <h3 class="vaca" data-salesPrice="1199.99">Round Trip to Japan</h3>
+                        <button class="getPrice">Get Price</button>
+                        <p class="commentTitle">Comments on this deal:</p>
+                        <ul class="comments">
+                            <li>Great price!</li> -->
+                            <!-- // MUST USE &lt; FOR < SYMBOL  -->
+                            <!-- <li>&lt;3 </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div> --> 
+
+        </div>
+        
+        <script src="vacaScript.js"></script>
+    </body>
+</html>
