@@ -6,7 +6,7 @@ $("li").on("click", function(){
 
 
 //Removing list items when clicking delete
-$(".delete").on("click", function(event){
+$(".toDelete").on("click", function(event){
     $(this).parent().fadeOut(1000, function(){
         $(this).remove();
     });
@@ -24,4 +24,14 @@ $(".delete").on("click", function(event){
 //     });
     // Will stop Li listener from firing
     
+});
+
+//Add new item. Listner for enter key
+$("input[type='text']").on("keypress", function(e){
+    var enteredTxt = $("input").val();
+    if (e.which === 13) {
+        $("ul").prepend().html("<li><span class='toDelete'>X</span> "+enteredTxt+"</li>");
+        //clears the input field after enter is hit
+        $(this).val("");
+    }
 })
