@@ -36,7 +36,7 @@ $("ul").on("click", ".toDelete", function(event){
 $("input[type='text']").on("keypress", function(e){    
     if (e.which === 13) {
         var enteredTxt = $(this).val();
-        $("ul").append("<li><span class='toDelete'>X</span> "+enteredTxt+"</li>");
+        $("ul").append("<li><span class='toDelete'><i class='far fa-trash-alt'></i></span> "+enteredTxt+"</li>");
         //clears the input field after enter is hit
         $(this).val("");
     }

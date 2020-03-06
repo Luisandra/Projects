@@ -47,6 +47,7 @@ ul li {
 /* Hide delete button - jQuery to hover and display  */
 .toDelete {
     display: none;
+    
 }
 
 /* Alternate list background color  */
@@ -55,7 +56,14 @@ ul :nth-child(even){
 }
 
 .fa-plus {
-    text-decoration-color: hotpink;
+    color: rgb(252, 255, 240);
+}
+
+.fa-trash-alt {
+    /* color: darkred; */
+    background-color: rgb(226, 0, 0);
+    padding: 2px 5px;
+    margin-left: 0;
 }
 
 
