@@ -1,12 +1,18 @@
 // Strike through for completed list item 
 // CSS class created and applied/removed 
-$("li").on("click", function(){
+
+// $("li").on("click", function(){
+//         //THIS CODE ONLY WORKS ON CURRENT LI, NOT FUTURE LI'S
+//     $(this).toggleClass("completed");
+// })
+
+$("ul").on("click", "li", function(){
     $(this).toggleClass("completed");
-})
+});
 
 
 //Removing list items when clicking delete
-$(".toDelete").on("click", function(event){
+$("ul").on("click", ".toDelete", function(event){
     $(this).parent().fadeOut(1000, function(){
         $(this).remove();
     });
@@ -26,11 +32,11 @@ $(".toDelete").on("click", function(event){
     
 });
 
-//Add new item. Listner for enter key
-$("input[type='text']").on("keypress", function(e){
-    var enteredTxt = $("input").val();
+//Add new item. Listener for enter key
+$("input[type='text']").on("keypress", function(e){    
     if (e.which === 13) {
-        $("ul").prepend().html("<li><span class='toDelete'>X</span> "+enteredTxt+"</li>");
+        var enteredTxt = $(this).val();
+        $("ul").append("<li><span class='toDelete'>X</span> "+enteredTxt+"</li>");
         //clears the input field after enter is hit
         $(this).val("");
     }
