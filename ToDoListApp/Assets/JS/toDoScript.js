@@ -40,4 +40,13 @@ $("input[type='text']").on("keypress", function(e){
         //clears the input field after enter is hit
         $(this).val("");
     }
+});
+
+// Display delete icon on mouseover 
+$("ul").on("mouseover", "li", function(){
+    $(this).children(".toDelete").css("display", "inline");
+})
+
+$("ul").on("mouseout", "li", function(){
+    $(this).children(".toDelete").css("display", "none");
 })
