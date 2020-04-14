@@ -13,7 +13,7 @@ $(document).ready(()=>{
             let completed = todo.isComplete ? "completed" : ""
             
             $('ul').append(
-                `<li data-id = ${todo.id} class=${completed}>${todo.descrption}<span> class ='fas fa-trash'></i></span></li>`
+                `<li data-id = ${todo.id} class=${completed}>${todo.description}<span> class ='fas fa-trash'></i></span></li>`
             )
         })
     })
@@ -28,7 +28,7 @@ $('input').keypress((event)=>{
     if(event.which === 13 &&$(this).val() !=="") {
         $.ajax({
             url: 'http://localhost:3000/todos',
-            method: 'POST'
+            method: 'POST',
             data: {item: $(this).val()}
         })
         .done((dataObj)=>{
