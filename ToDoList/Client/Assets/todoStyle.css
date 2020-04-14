@@ -1,0 +1,95 @@
+
+* {
+    /* keeps from spilling out of parent */
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, #ffff00 0%, #ff99cc 100%);
+}
+/* //setting all fonts  */
+p, li, input{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+div.title p {
+    margin-top: 0;
+}
+
+div.list {
+    display: flex;
+    justify-content: center;
+}
+
+.content    {
+    border: solid black 1px;
+    background-color: rgb(253, 250, 244);
+}
+
+div.content h3 {
+    text-align: center;
+}
+
+ul {
+    /* remove bullet points  */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 40px;
+    background: rgb(253, 250, 244);
+    padding: 2px 10px;
+    }
+
+li:nth-child(2n) {
+    background: #dddddd;
+}
+
+span {
+    float: right;
+    padding-left: 5px;
+    color: red;
+    display: hidden;
+}
+
+li:hover span {
+    opacity: 1;
+}
+
+#inputBx {
+    width: 100%;
+ 
+}
+
+/* //when box is highlighted */
+input:focus {
+    border: 3px solid #008100;
+    background: white;
+    outline: none;
+}
+
+/* classes for completed items */
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
+
+
