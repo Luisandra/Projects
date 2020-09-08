@@ -35,7 +35,8 @@ $('input').keypress((event)=>{
             completed = dataObj.isComplete ? "completed" : ""
 
             $('ul').append(
-                `<li data-id=${dataObj.id} class =${completed}>${dataObj.description} <span><i class='far fa-trash-alt'></i></span></li>`
+                `<li data-id=${dataObj.id} class =${completed}>${dataObj.description} <span><i class="fas fa-trash"></i></span></li>`
+
             )
             $('input').val("")
         })
